@@ -1,8 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
+import BaseUse from './BaseUse';
+import { Button } from 'antd';
 import './App.css';
 
 function App() {
+  async function asyncFn() {
+    console.log('00000');
+    const p = await new Promise(resolve => {
+      setTimeout(() => {
+        resolve();
+      }, 3000);
+    });
+    console.log(p);
+    console.log('1111');
+    console.log('22222');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +33,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <BaseUse />
+      <Button onClick={asyncFn}>+++</Button>
     </div>
   );
 }
