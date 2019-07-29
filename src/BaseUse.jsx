@@ -1,5 +1,6 @@
 import React from 'react';
 import { Editable } from '@wyny/metro';
+import '@wyny/metro/es/editable/style/index.css';
 
 const dataSource = [
   {

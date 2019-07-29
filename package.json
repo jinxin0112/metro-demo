@@ -132,8 +132,7 @@
         "import",
         {
           "libraryName": "@wyny/metro",
-          "libraryDirectory": "es",
-          "style": true
+          "libraryDirectory": "es"
         },
         "@wyny/metro"
       ],
@@ -145,12 +144,23 @@
           "style": "css"
         },
         "antd"
+      ],
+      [
+        "import",
+        {
+          "libraryName": "metro-comp",
+          "libraryDirectory": "es",
+          "style": true
+        },
+        "metro-comp"
       ]
     ]
   },
   "devDependencies": {
-    "@wyny/metro": "^0.1.1",
+    "@wyny/metro": "^0.1.2-beta.0",
     "antd": "^3.20.7",
-    "babel-plugin-import": "^1.12.0"
+    "babel-plugin-import": "^1.12.0",
+    "less-loader": "^5.0.0",
+    "metro-comp": "^2.1.2"
   }
 }
